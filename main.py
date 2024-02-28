@@ -18,6 +18,30 @@ def generate_board():
     for i in range(0, 9, 3):
         fill_subgrid(board, i, i)
 
+    solve_sudoku(board)
+
+    # Clear cells based on difficulty level
+    difficulty_level = input("Easy(e), Medium(m), Hard(h) or Expert(x) Sudoku Game?")
+    if difficulty_level == "e":
+        cells_to_clear = 35
+    elif difficulty_level == "m":
+        cells_to_clear = 45
+    elif difficulty_level == "h":
+        cells_to_clear = 55
+    elif difficulty_level == "x":
+        cells_to_clear = 64
+    else:
+        print("Invalid Difficulty Level")
+
+    # Clear cells randomly
+    for _ in range(cells_to_clear):
+        row = random.randint(0, 8)
+        col = random.randint(0, 8)
+        while board[row][col] == 0:     # Checks the index random generated is already empty, if its yhe loop needs to find another cell to clear
+            row = random.randint(0, 8)
+            col = random.randint(0, 8)
+        board[row][col] = 0 # Clears the cell
+
     return board
 
 
@@ -79,8 +103,28 @@ def is_valid(board, row, col, num):
     return True
 
 
+def print_board(board):
+    for i in range(len(board)):
+        if i % 3 == 0:
+            print("-" * 25)  # Add horizontal line after every 3 rows
+
+        for j in range(len(board[0])):
+            if j % 3 == 0:
+                print("|", end=" ")  # Add vertical line after every 3 columns
+
+            if board[i][j] != 0:
+                print(board[i][j], end=" ")
+            else:
+                print(".", end=" ")
+
+        print("|")
+
+    print("-" * 25)  # Add horizontal line at the end
+
+
 # --RUN--#
-sudoku_board = generate_board()
-solve_sudoku(sudoku_board)
-for row in sudoku_board:
-    print(row)
+def main():
+    sudoku_board = generate_board()
+    print_board(sudoku_board)
+
+main()
