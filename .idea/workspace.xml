@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16e280ef-bc9b-4f5a-aa58-202faf4c5a03" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SudokuGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="16e280ef-bc9b-4f5a-aa58-202faf4c5a03" name="Changes" comment="Generating an initial board&#10;Looking up online on how to code this game i have made the first two steps:&#10;Generating an empty board and filled the diagonal subgrids with random numbers" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +36,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Leonardo Morgado/PycharmProjects/TextSlotMachine/main.py"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+    ]
   }
 }]]></component>
   <component name="SharedIndexes">
@@ -63,6 +58,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709074145865</updated>
     </task>
+    <task id="LOCAL-00001" summary="Generating an initial board&#10;Looking up online on how to code this game i have made the first two steps:&#10;Generating an empty board and filled the diagonal subgrids with random numbers">
+      <option name="closed" value="true" />
+      <created>1709078549529</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709078549529</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Generating an initial board&#10;Looking up online on how to code this game i have made the first two steps:&#10;Generating an empty board and filled the diagonal subgrids with random numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Generating an initial board&#10;Looking up online on how to code this game i have made the first two steps:&#10;Generating an empty board and filled the diagonal subgrids with random numbers" />
   </component>
 </project>
